@@ -1,0 +1,64 @@
+footer
+	background-color: #ffd753
+	.foot-logo
+		display: flex
+		justify-content: center
+		align-items: center
+		margin-bottom: 2.5em
+		margin: 1em auto 2em
+		// @media(min-width: 680px)
+		@media(min-width: 680px)
+			margin: 1.5em auto 2em
+		h4
+			margin: 0
+		img
+			width: 1.5em
+			margin-right: .8em
+	ul
+		list-style: none
+		margin: 1.5em auto
+		padding: 0
+		li
+			margin-bottom: 1em
+			cursor: pointer
+			&:nth-child(2),
+			&:nth-child(4),
+			&:nth-child(6)
+				display: none
+			@media(min-width: 680px)
+				display: inline
+				&:nth-child(2),
+				&:nth-child(4),
+				&:nth-child(6)
+					display: inline
+					margin: 0 .5em
+			@media(min-width: 1020px)
+				&:nth-child(2),
+				&:nth-child(4),
+				&:nth-child(6)
+					margin: 0 1em
+	.media-icons
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+		width: 220px
+		margin: 0 auto
+		@media(min-width: 680px)
+			width: 320px
+		@media(min-width: 1020px)
+			width: 380px
+			margin-bottom: 1.5em
+	.icon
+		width: 32px
+		height: 32px
+		background: url('../images/social-icons.svg')
+		background-size: cover
+		cursor: pointer
+		&:nth-child(2)
+			background-position: 128px
+		&:nth-child(3)
+			background-position: 96px
+		&:nth-child(4)
+			background-position: 64px
+		&:nth-child(5)
+			background-position: 32px

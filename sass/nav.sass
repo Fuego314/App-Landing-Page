@@ -1,0 +1,115 @@
+nav
+	position: absolute
+	top: 0
+	width: 100%
+	@media(min-width: 768px)
+		display: flex
+		top: 1em
+		align-items: center
+		justify-content: space-between
+	@media(min-width: 1020px)
+		padding: 0 4em
+
+.nav-brand,
+.nav-brand .container
+	height: 50px
+
+.nav-brand .container,
+.nav-brand .logo,
+	display: flex
+
+.nav-brand .container
+	justify-content: space-between
+
+.logo
+	align-items: center
+	img
+		width: .8em
+		margin-right: .6em
+	h1
+		margin: 0
+
+.navbar-toggle
+	background: none
+	border: none
+	outline: none
+	padding: 0
+	overflow: hidden
+	z-index: 55
+	.toggle-bar
+		display: block
+		width: 1.563em
+		height: .125em
+		background: #fff
+		border-radius: .063em
+		transform-origin: left
+		transition: all .3s
+		&:nth-child(1)
+			margin-bottom: .313em
+			transform-origin: 10% 10%
+		&:nth-child(3)
+			margin-top: .313em
+			transform-origin: 10% 90%
+	@media(min-width: 768px)
+		display: none
+
+.top-bar-open
+	transform: rotate(45deg)
+.middle-bar-open
+	transform: translateX(1.375em)
+	opacity: 0
+.bottom-bar-open
+	transform: rotate(-45deg)
+
+.nav
+	display: flex
+	flex-direction: column
+	align-items: center
+	margin: .32em auto 0 auto
+	padding: 0
+	list-style: none
+	line-height: 2
+
+@media(max-width: 767px)
+	.navbar
+		height: 100%
+		width: 250px
+		position: fixed
+		z-index: 50
+		top: 0
+		right: 0
+		background-color: #931b4b
+		overflow-x: hidden
+		padding-top: 60px
+		transform: (translateX(250px))
+		transition: 0.5s
+		ul li
+			margin-bottom: 1.5em
+
+.download-link
+	padding: 10px 27px
+	background: #700459
+	border: 1px solid #650a51
+	border-radius: 25px
+
+@media(min-width: 768px)
+	.navbar
+		ul
+			flex-direction: row
+			margin: 0 0 0 auto
+			li
+				display: block
+				margin: 0 .8em 0 .8em
+				&:nth-child(5)
+					margin-right: 0
+
+@media(min-width: 800px)
+	.navbar ul
+		li
+			margin: 0 .9em 0 .9em
+
+@media(min-width: 860px)
+	.navbar
+		margin-top: 0.15em
+	.download-link
+		padding: 10px 23px

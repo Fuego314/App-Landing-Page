@@ -1,0 +1,203 @@
+.how
+	padding: 0 0 3em
+	@media(min-width: 350px) and (max-width: 679px)
+		padding: 0 0 1em
+	@media(min-width: 1020px)
+		padding: 0 0 5em
+
+.sign-in-bg
+	background-image: url('../images/how-bg.jpg')
+	background-position: top center
+	padding-top: 2em
+	padding-bottom: 2em
+	overflow: hidden
+	@media(min-width: 350px)
+		margin-bottom: 2em
+	@media(min-width: 1020px)
+    padding-bottom: 5.5em
+	h2
+		margin-bottom: 1.2em
+		@media(min-width: 1020px)
+			margin-bottom: 76px
+
+.sign-in
+	@media(min-width: 350px)
+		margin-bottom: 1em
+	@media(min-width: 680px)
+    margin-top: 3em
+	.sign-in-text
+		max-width: 475px
+		margin: 0 auto
+
+	p
+		margin-top: 1.5em
+	.app-previews
+		position: relative
+		display: none
+		max-width: 320px
+		height: 275px
+		align-items: center
+		justify-content: space-between
+		margin: 2.25em auto 0
+
+.app-previews
+	.app-preview
+		position: absolute
+		top: 0
+		transition: .3s all
+	.log-in
+		left: 15px
+		z-index: 4
+	.messages-pre
+		right: 15px
+		z-index: 2
+		filter: contrast(65%)
+		transform: scale(.9)
+	.preview-arrow
+		position: relative
+		width: 2em
+		cursor: pointer
+		z-index: 10
+	.left-arrow
+		left: -1em
+	.right-arrow
+		right: -1em
+	@media(min-width: 480px) and (max-width: 679px)
+		.left-arrow
+			left: -1.5em
+		.right-arrow
+			right: -1.5em
+
+.pre-sm
+	display: block
+.pre-lg
+	display: none
+
+@media(min-width: 350px)
+	.sign-in
+		.app-previews
+			display: flex
+@media(min-width: 680px)
+	.sign-in
+		display: flex
+		justify-content: space-between
+		align-items: center
+		margin-bottom: 1em
+		.sign-in-text
+			max-width: none
+			width: 50%
+			margin: 0 1em 0 0
+		h3
+			width: 185px
+			margin: 0
+		p
+			margin: 1em 2em 0 0
+		.app-previews
+			width: 320px
+			margin: 0
+@media(min-width: 850px)
+	.sign-in
+		padding: 0 1.5em
+
+@media(min-width: 1020px)
+	.sign-in
+		max-width: 1050px
+		margin: 0 auto
+		align-items: flex-start
+		.app-previews
+			width: 450px
+			height: 400px
+			max-width: 450px
+		h3
+			width: 200px
+		p
+			margin-right: 3em
+		.pre-sm
+			display: none
+		.pre-lg
+			display: block
+
+.access
+	overflow: hidden
+.access .container
+	display: flex
+	flex-direction: column-reverse
+	@media(min-width: 680px)
+		flex-direction: row
+		align-items: center
+	@media(min-width: 1020px)
+		position: relative
+		justify-content: space-between
+		max-width: 1050px
+		margin: 0 auto
+		padding: 0 2.5em
+.access-phone
+	display: none
+	width: 100%
+	max-width: 310px
+	margin: 1.75em auto 2em
+	transition: all .3s
+	@media(min-width: 350px)
+		display: block
+	@media(min-width: 1020px)
+		width: 28em
+		max-width: none
+	@media(min-width: 1200px)
+		position: relative
+		left: -5em
+		width: 33em
+
+section
+	.access
+		h2
+			margin: 2.335em 0 1.2em
+			@media(min-width: 350px)
+				margin: 1em 0 1.2em
+			@media(min-width: 680px)
+				margin: 1em 0 1em
+			@media(min-width: 1020px)
+				margin: 2em 0 1em
+		.access-text
+			max-width: 475px
+			margin: 0 auto
+			@media(min-width: 680px)
+				width: 73%
+				max-width: none
+				margin-left: 2.5em
+			@media(min-width: 860px)
+				margin-left: 3.5em
+			@media(min-width: 1020px)
+				width: 45%
+				margin: 0
+		.btns
+			display: flex
+			flex-direction: column
+			align-items: center
+			justify-content: space-between
+			height: 105px
+			margin-top: 1.75em
+			@media(min-width: 420px)
+				flex-direction: row
+				max-width: 370px
+				height: 75px
+				margin: 1em auto 0
+			@media(min-width: 680px)
+				max-width: 375px
+				min-width: 358px
+				height: 50px
+				margin: 1.25em 0 0
+			.btn
+				width: 11em
+				border: 2px solid #282828
+				border-radius: 25px
+				cursor: pointer
+			.app-store
+				background-color: #282828
+			.google-play
+				background-color: #fff
+			img
+				width: 7em
+				margin-top: .3em
+
+.access
+	transition: .3s all
